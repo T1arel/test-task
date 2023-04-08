@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Latte Cafe</title>
+</head>
+
+<body class="body"> 
+<div class="header">
+    <script>
+    function FoodMenu(){
+        document.getElementById('menu')
+        .innerHTML="Menu"
+        document.getElementById('myImage')
+        .src="img/photo1.jpg";
+        document.getElementById('message')
+        .innerHTML="We change our menu every season. Here is what we are currently dishing up.";
+    }
+          
+    function DrinksMenu(){
+        document.getElementById('menu')
+        .innerHTML="Cold Menu"
+        document.getElementById('myImage')
+        .src="img/photo2.jpg";
+        document.getElementById('message')
+        .innerHTML="This menu includes cold dishes and drinks";
+    }
+    
+    function TakeawayMenu(){
+        document.getElementById('menu')
+        .innerHTML="Hot menu"
+        document.getElementById('myImage')
+        .src="img/photo3.jpg";
+        document.getElementById('message')
+        .innerHTML="This menu has hot dishes";
+    }
+</script>
+    <div class="header__title">
+    <b class="txt" id="menu">Menu</b>
+    <b class="txt1" id="message">We change our menu every season.
+        Here is what we are currently dishing up.</b>
+<button class="button" type ="button" onclick=FoodMenu();>Food Menu</button>
+<button class="button" type ="button" onclick=DrinksMenu();>Drinks Menu</button>
+<button class="button" type ="button"onclick=TakeawayMenu();> Takeaway Menu</button>
+    </div>
+    <img class="picture" id="myImage" src="img/photo1.jpg"></img>
+</div>
+</body> 
